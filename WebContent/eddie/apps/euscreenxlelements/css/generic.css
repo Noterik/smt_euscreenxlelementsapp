@@ -3,3 +3,7 @@
 #synctime{
 	display: none;
 }
+
+.break-word{
+	word-wrap: break-word;
+}
