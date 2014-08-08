@@ -10,8 +10,15 @@ var Header = function(options){
 	this.menuButton = jQuery("#menubutton");
 	
 	if(jQuery('#searchinput')[0]){
+		this.searchButton.remove();
 		this.searchForm.hide();
 	}
+	
+	this.searchForm.on('submit', function(event){
+		event.preventDefault();
+		var searchKey = jQuery(this).find('input').val();
+		window.location = "/search.html?query=" + encodeURIComponent(searchKey);
+	});
 	    
 	this.searchButton.on('click', function(){
 		var mobileSearchInput = jQuery('#mobilesearchinput');

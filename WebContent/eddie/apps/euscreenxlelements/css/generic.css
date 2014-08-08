@@ -1,4 +1,7 @@
+@import "/eddie/apps/euscreenxlelements/css/bootstrap.css";
+@import "/eddie/apps/euscreenxlelements/css/theme.css";
 @import "/eddie/apps/euscreenxlelements/css/all.css";
+@import "/eddie/apps/euscreenxlelements/css/terms.css";
 
 #synctime{
 	display: none;
@@ -6,4 +9,8 @@
 
 .break-word{
 	word-wrap: break-word;
+}
+
+#mobilenav{
+	z-index: 9999;
 }
