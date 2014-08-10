@@ -3,3 +3,4 @@ build/
 
 #ignore war directories
 dist/
+/bin
