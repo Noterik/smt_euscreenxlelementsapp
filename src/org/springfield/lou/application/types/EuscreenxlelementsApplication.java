@@ -20,26 +20,7 @@
 */
 package org.springfield.lou.application.types;
 
-import java.io.BufferedReader;
-import java.io.File;
-
-import org.dom4j.Document;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
-import org.dom4j.Node;
-import org.dom4j.Namespace;
-
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.*;
-
 import org.springfield.lou.application.Html5Application;
-import org.springfield.lou.application.Html5ApplicationInterface;
-import org.springfield.lou.application.components.BasicComponent;
-import org.springfield.lou.application.components.ComponentInterface;
-import org.springfield.lou.fs.*;
-import org.springfield.lou.homer.LazyHomer;
-import org.springfield.lou.screen.Screen;
 
 
 public class EuscreenxlelementsApplication extends Html5Application{
