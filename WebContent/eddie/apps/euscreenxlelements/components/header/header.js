@@ -1,6 +1,8 @@
 var Header = function(options){
 	var self = this;
 	
+	Component.apply(this);
+	
 	this.element = jQuery("#header");
 	this.$navElement = this.element.find('#navpanel');
     this.$navbarElement = this.element.find('.navbar-header');
@@ -46,3 +48,4 @@ var Header = function(options){
 		
 	});
 };
+Header.prototype = Object.create(Component.prototype);
