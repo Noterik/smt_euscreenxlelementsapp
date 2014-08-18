@@ -19,7 +19,9 @@ var Header = function(options){
 	this.searchForm.on('submit', function(event){
 		event.preventDefault();
 		var searchKey = jQuery(this).find('input').val();
-		window.location = "/search.html?query=" + encodeURIComponent(searchKey);
+		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
+			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
+		}
 	});
 	    
 	this.searchButton.on('click', function(){
