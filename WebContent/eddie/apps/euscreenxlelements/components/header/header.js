@@ -21,6 +21,9 @@ var Header = function(options){
 		var searchKey = jQuery(this).find('input').val();
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
 			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
+		}else{
+			console.log("HOI12334")
+			window.location = "/search.html";
 		}
 	});
 	    
