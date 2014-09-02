@@ -38,5 +38,19 @@
                 <li><a href="/myeuscreen.html" class="no-prod">MYEUSCREEN</a></li>
             </ul>
 		</div>
+		
+		<!-- my euscreen thumbnail, will be shown only when user has logged in on every page except on desktop -->
+		<div class="user-thumbnail hidden-xs hidden-sm">
+        	<a role="button" data-toggle="dropdown" data-target="login-action" href="/myeuscreen.html">
+				<img src="/eddie/apps/euscreenxlelements/img/ic-user.png" alt="User"/>
+				<span class="frame"></span> <span class="status-icon"></span>
+			</a>
+              	
+            <!-- drop down -->
+     		<ul id="login-action" class="dropdown-menu pull-right" role="menu" aria-labelledby="login-action">
+				<li><a href="/myeuscreen.html" value="TITLE">MYEUSCREEN</a></li>
+				<li><a href="#" value="YEAR">LOGOUT</a></li>
+			</ul>
+     	</div>
 	</div>
 </div>
