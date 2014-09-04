@@ -20,7 +20,7 @@ a:focus {
   text-decoration: none;
 }
 input {
-  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
 }
 .colorblack {
   color: #000000;
@@ -305,7 +305,7 @@ body .page .main .media-item .media-metadata a h3.media-heading {
   color: #333333;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
-  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
 }
 body .page .main .media-item .media-metadata .line {
   display: block;
@@ -368,7 +368,7 @@ body .page .main .media-item .media-wrapper .media-title:after {
 body .page .main .media-item .media-wrapper .media-title h3 {
   color: #ffffff;
   font-size: 1em;
-  font-family: 'Proxima Nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
   margin: 15px 0 0 0;
   width: 100%;
 }
@@ -1588,6 +1588,9 @@ body .box-link:hover {
   body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
     font-size: 0.929em;
   }
+  body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
+    color: #808080;
+  }
   body .page .main .right .row .results .media-item .media-metadata h3.media-heading {
     margin-bottom: 8px;
   }
@@ -1839,7 +1842,7 @@ body .box-link:hover {
   }
   body .page .main .right .row .media-relate .media-item .media-metadata .line .label,
   body .page .main .right .row .media-relate .media-item .media-metadata .line .value {
-    font-size: 1em;
+    font-size: 0.929em;
   }
   body .search .main .left.fix {
     width: 390px;
