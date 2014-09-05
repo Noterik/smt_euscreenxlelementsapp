@@ -391,12 +391,14 @@ body .page .main .media-item .media-wrapper .media-type.audio {
   height: 15px;
   background-position: -286px 0;
 }
-body .page .main .media-item .media-wrapper .media-type.text {
+body .page .main .media-item .media-wrapper .media-type.text,
+body .page .main .media-item .media-wrapper .media-type.doc {
   width: 16px;
   height: 16px;
   background-position: -304px 0;
 }
-body .page .main .media-item .media-wrapper .media-type.image {
+body .page .main .media-item .media-wrapper .media-type.image,
+body .page .main .media-item .media-wrapper .media-type.picture {
   width: 15px;
   height: 14px;
   background-position: -271px 0;
@@ -1566,6 +1568,9 @@ body .box-link:hover {
   body .about .main .partners-list .provider {
     border-left: 6px solid #f2f2f2;
     border-right: 0px;
+  }
+  body .about .main .partners-list .provider a .info h2 {
+    margin-top: 70px;
   }
   body .audio-player {
     border-left: 0px;
