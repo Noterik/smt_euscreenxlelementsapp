@@ -391,14 +391,12 @@ body .page .main .media-item .media-wrapper .media-type.audio {
   height: 15px;
   background-position: -286px 0;
 }
-body .page .main .media-item .media-wrapper .media-type.text,
-body .page .main .media-item .media-wrapper .media-type.doc {
+body .page .main .media-item .media-wrapper .media-type.text {
   width: 16px;
   height: 16px;
   background-position: -304px 0;
 }
-body .page .main .media-item .media-wrapper .media-type.image,
-body .page .main .media-item .media-wrapper .media-type.picture {
+body .page .main .media-item .media-wrapper .media-type.image {
   width: 15px;
   height: 14px;
   background-position: -271px 0;
@@ -465,6 +463,9 @@ body .page .main .media-action .overlaycontent:after {
 }
 body .page .main .media-action .overlaycontent:after {
   clear: both;
+}
+body .page .main .media-action .overlaycontent.big {
+  width: 300px;
 }
 body .page .main .media-action .overlaycontent h3 {
   font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
@@ -759,6 +760,11 @@ body .page footer .links .list-inline li {
 }
 body .page footer .links .list-inline li a {
   color: #787878;
+  -webkit-transition: color 0.35s;
+  transition: color 0.35s;
+}
+body .page footer .links .list-inline li a:hover {
+  color: #222;
 }
 body .page footer .affiliates {
   text-align: right;
@@ -767,7 +773,7 @@ body .page footer .affiliates {
 body .page footer .affiliates .list-inline li {
   margin-left: 10px;
 }
-body .page footer .affiliates .list-inline .europeancomission {
+body .page footer .affiliates .list-inline .europeancomission a {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+ */
   filter: gray;
@@ -786,13 +792,13 @@ body .page footer .affiliates .list-inline .europeancomission {
   height: 82px;
   display: inline-block;
 }
-body .page footer .affiliates .list-inline .europeancomission:hover {
+body .page footer .affiliates .list-inline .europeancomission a:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
   opacity: 100;
   filter: alpha(opacity=10000);
 }
-body .page footer .affiliates .list-inline .europeana {
+body .page footer .affiliates .list-inline .europeana a {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+ */
   filter: gray;
@@ -811,7 +817,7 @@ body .page footer .affiliates .list-inline .europeana {
   height: 80px;
   display: inline-block;
 }
-body .page footer .affiliates .list-inline .europeana:hover {
+body .page footer .affiliates .list-inline .europeana a:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
   opacity: 100;
@@ -1472,6 +1478,9 @@ body .box-link:hover {
   body .item .main .row .left .row .media-action .button-list > li {
     display: inline-block;
     border-bottom: 0px;
+  }
+  body .item .main .row .left .row .media-action .copyright .big {
+    width: 500px;
   }
   body .item .main .row .left .row .media-metadata {
     margin: 1px 0 0 0;
