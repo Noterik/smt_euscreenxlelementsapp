@@ -391,15 +391,22 @@ body .page .main .media-item .media-wrapper .media-type.audio {
   height: 15px;
   background-position: -286px 0;
 }
-body .page .main .media-item .media-wrapper .media-type.text {
+body .page .main .media-item .media-wrapper .media-type.text,
+body .page .main .media-item .media-wrapper .media-type.doc {
   width: 16px;
   height: 16px;
   background-position: -304px 0;
 }
-body .page .main .media-item .media-wrapper .media-type.image {
+body .page .main .media-item .media-wrapper .media-type.image,
+body .page .main .media-item .media-wrapper .media-type.picture {
   width: 15px;
   height: 14px;
   background-position: -271px 0;
+}
+body .page .main .media-item .media-wrapper .media-type.series {
+  width: 18px;
+  height: 18px;
+  background-position: -96px -82px;
 }
 body .page .main .media-item .media-wrapper .media-hue {
   background: rgba(140, 198, 63, 0.6);
