@@ -22,8 +22,7 @@ var Header = function(options){
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
 			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
 		}else{
-			console.log("HOI12334")
-			window.location = "/search.html";
+			window.location = "/search.html?query=*";
 		}
 	});
 	    
@@ -54,3 +53,6 @@ var Header = function(options){
 	});
 };
 Header.prototype = Object.create(Component.prototype);
+Header.prototype.setActivePage = function(activePage){
+	jQuery("#header-link-" + activePage).addClass("active");
+};
