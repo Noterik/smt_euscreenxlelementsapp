@@ -22,7 +22,7 @@ var Header = function(options){
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
 			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
 		}else{
-			window.location = "/search.html?query=*";
+			window.location = "/search.html";
 		}
 	});
 	    

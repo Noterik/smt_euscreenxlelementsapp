@@ -1938,7 +1938,7 @@ body .box-link:hover {
     background: #fff;
     color: #00aeef;
   }
-  body .home .main .row .collection-viewer .row .media-item .media-image .media-wrapper .media-title {
+  body .home .main .row .collection-viewer .media-title {
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s;
