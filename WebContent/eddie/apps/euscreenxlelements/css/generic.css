@@ -3,6 +3,7 @@
 @import "/eddie/apps/euscreenxlelements/css/theme.css";
 @import "/eddie/apps/euscreenxlelements/css/all.css";
 @import "/eddie/apps/euscreenxlelements/css/terms.css";
+@import "/eddie/apps/euscreenxlelements/css/video-copyright.css";
 
 #synctime{
 	display: none;
@@ -18,4 +19,17 @@
 
 .warning-playout{
 	display: block;
+}
+
+.media-player .loading{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	background-image: url(/eddie/apps/euscreenxlelements/img/spinner.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
