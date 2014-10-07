@@ -1,6 +1,8 @@
 var Videocopyright = function(options){
 	console.log("Videocopyright()");
 	var element = jQuery("#videocopyright");
+	element.addClass('videocopyright');
+	element.hide();
 	jQuery(window).on('contextmenu', function(event){
 		if(jQuery(event.target).is('video')){
 			event.preventDefault();
