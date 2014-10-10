@@ -1,9 +1,3 @@
-@import "/eddie/apps/euscreenxlelements/css/bootstrap.css";
-@import "/eddie/apps/euscreenxlelements/css/font-awesome.min.css";
-@import "/eddie/apps/euscreenxlelements/css/theme.css";
-@import "/eddie/apps/euscreenxlelements/css/all.css";
-@import "/eddie/apps/euscreenxlelements/css/terms.css";
-
 #synctime{
 	display: none;
 }

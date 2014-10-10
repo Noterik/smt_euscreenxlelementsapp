@@ -1,4 +1,4 @@
+loadStyleSheet(screen,font-awesome)
 loadStyleSheet(screen,bootstrap) //load the bootstrap stylesheet
-loadStyleSheet(screen,generic) // load the generic stylesheet
 setRole(screen,"itempage")
 loadContent(screen,template)
