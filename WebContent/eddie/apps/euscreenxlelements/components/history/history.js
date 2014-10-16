@@ -30,6 +30,8 @@ History.prototype.createURL = function(){
 			queryStr += encodeURIComponent(name) + "=" + encodeURI(this.parameters[name]);
 			i++;
 		}
-		history.pushState(null, null, queryStr);
+		if(window.history.pushState){
+			window.history.pushState(null, null, queryStr);
+		}
 	}
 };

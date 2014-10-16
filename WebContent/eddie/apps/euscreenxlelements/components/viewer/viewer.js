@@ -2,6 +2,7 @@ var Viewer = function(options){
 	console.log("Viewer()");
 	Component.apply(this, arguments);
 	
+	this.device = "desktop";
 	this.element = jQuery("#viewer");
 };
 
@@ -32,17 +33,34 @@ Viewer.prototype.setVideo = function(data){
 	}
 	this.element.find('.media-player').remove();
 	this.element.append(html);
+	/*
 	self.loading(true);
 	
 	var video = this.element.find('video');
-	video.parent().hide();
-	video[0].load();
-	video[0].addEventListener("canplaythrough", function(){
-		console.log("CAN PLAY THROUGH!!!!");
+	console.log(video);
+	if(this.device != "desktop"){
 		self.loading(false);
-		video.parent().show();
-	})
+		
+	}else{
+		video[0].load();
+		var readyInterval = setInterval(function(){
+			console.log(video[0].readyState);
+			if(video[0].readyState == 1 || video){
+				self.loading(false);
+				video.parent().show();
+				clearInterval(readyInterval);
+			}
+		}, 50);
+	}
+	*/
+	
 };
+Viewer.prototype.setDevice = function(data){
+	console.log("Viewer.setDevice(" + data + ")");
+	data = JSON.parse(data);
+	this.device = data.device;
+	console.log(this.device);
+}
 Viewer.prototype.setAudio = function(data){
 	var template = _.template(this.element.find('.audio-template').text());
 	var audio = JSON.parse(data);
