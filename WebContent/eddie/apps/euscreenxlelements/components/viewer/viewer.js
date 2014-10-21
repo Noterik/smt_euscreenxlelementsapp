@@ -25,6 +25,10 @@ Viewer.prototype.setVideo = function(data){
 	var self = this;
 	var video = JSON.parse(data);
 	
+	console.log("VIDEO");
+	console.log(video);
+	console.log("END VIDEO");
+	
 	var html = template({video: video});
 	
 	if(this.element.find('video')[0]){
@@ -62,6 +66,7 @@ Viewer.prototype.setDevice = function(data){
 	console.log(this.device);
 }
 Viewer.prototype.setAudio = function(data){
+	console.log(data);
 	var template = _.template(this.element.find('.audio-template').text());
 	var audio = JSON.parse(data);
 	

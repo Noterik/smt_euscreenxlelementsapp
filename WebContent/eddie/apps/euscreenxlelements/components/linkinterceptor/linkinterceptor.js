@@ -13,4 +13,10 @@ Linkinterceptor.prototype.interceptLinks = function(){
 			alert(message);
 		}
 	});
+	
+	jQuery('a[data-prod="false"]').on('click', function(){
+		event.preventDefault();
+		
+		location.href = "404.html";
+	})
 };

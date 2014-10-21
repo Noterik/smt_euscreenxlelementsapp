@@ -35,20 +35,22 @@
 			<ul class="nav navbar-nav navbar-right">
                 <li id="header-link-home"><a href="/">HOME</a></li>
                 <li id="header-link-about"><a href="/about.html">ABOUT</a></li>
-                <li id="header-link-myeuscreen"><a href="/myeuscreen.html" class="no-prod">MYEUSCREEN</a></li>
+                <li id="header-link-myeuscreen"><a href="/myeuscreen.html" data-prod="false">MYEUSCREEN</a></li>
             </ul>
 		</div>
 		
 		<!-- my euscreen thumbnail, will be shown only when user has logged in on every page except on desktop -->
 		<div class="user-thumbnail hidden-xs hidden-sm">
+			<!--
         	<a role="button" data-toggle="dropdown" data-target="login-action" href="/myeuscreen.html">
 				<img src="/eddie/apps/euscreenxlelements/img/ic-user.jpg" alt="User"/>
 				<span class="frame"></span> <span class="status-icon"></span>
 			</a>
+			-->
               	
             <!-- drop down -->
      		<ul id="login-action" class="dropdown-menu pull-right" role="menu" aria-labelledby="login-action">
-				<li><a href="/myeuscreen.html" value="TITLE">MYEUSCREEN</a></li>
+				<li><a href="/myeuscreen.html" data-prod="false" value="TITLE">MYEUSCREEN</a></li>
 				<li><a href="#" value="YEAR">LOGOUT</a></li>
 			</ul>
      	</div>
