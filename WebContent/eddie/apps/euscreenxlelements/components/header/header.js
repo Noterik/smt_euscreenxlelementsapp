@@ -16,6 +16,14 @@ var Header = function(options){
 		this.searchForm.hide();
 	}
 	
+	this.searchForm.find('input').on('blur', function(event){
+		var searchKey = self.searchForm.find('input').val();
+		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
+			event.preventDefault();
+			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
+		}
+	});
+	
 	this.searchForm.on('submit', function(event){
 		event.preventDefault();
 		var searchKey = jQuery(this).find('input').val();

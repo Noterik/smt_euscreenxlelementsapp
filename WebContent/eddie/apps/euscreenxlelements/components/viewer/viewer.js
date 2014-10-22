@@ -90,9 +90,11 @@ Viewer.prototype.setDoc = function(data){
 	
 	var self = this;
 	setTimeout(function(){
-		var height = jQuery("#viewer").height();
-		if(height > 100)
-			self.element.find(".media-player iframe").height(height);
-	}, 250);
+		console.log("SET HEIGHT2!!!!");
+		var width = self.element.find("iframe").parent().width();
+		console.log("WIDTH: " + width);
+		if(width > 100)
+			self.element.find("iframe").height(width / 4 * 3);
+	}, 500);
 	
 };

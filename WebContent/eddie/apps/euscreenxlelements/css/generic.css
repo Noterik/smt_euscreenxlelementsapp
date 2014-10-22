@@ -26,3 +26,8 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+
+body .page .main .media-action .overlaycontent .contact-provider-form.form-error .form-notification {
+  color: #CF1D1D;
+  display: block;
+}
