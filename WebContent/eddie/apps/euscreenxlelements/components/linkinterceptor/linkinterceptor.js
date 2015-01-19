@@ -14,9 +14,8 @@ Linkinterceptor.prototype.interceptLinks = function(){
 		}
 	});
 	
-	jQuery('a[data-prod="false"]').on('click', function(){
+	jQuery('a[data-prod="false"]').on('click', function(event){
 		event.preventDefault();
-		
 		location.href = "404.html";
-	})
+	});
 };
