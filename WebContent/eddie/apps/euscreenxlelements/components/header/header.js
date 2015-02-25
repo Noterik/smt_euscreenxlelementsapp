@@ -20,7 +20,7 @@ var Header = function(options){
 		var searchKey = self.searchForm.find('input').val();
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
 			event.preventDefault();
-			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
+			window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
 		}
 	});
 	
@@ -28,7 +28,7 @@ var Header = function(options){
 		event.preventDefault();
 		var searchKey = jQuery(this).find('input').val();
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
-			window.location = "/search.html?query=" + encodeURIComponent(searchKey.toLowerCase());
+			window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
 		}else{
 			window.location = "/search.html";
 		}
