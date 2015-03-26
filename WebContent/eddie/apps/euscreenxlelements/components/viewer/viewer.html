@@ -13,7 +13,7 @@
 					var src = video.sources[i];
 					var timestamp = new Date().getTime();
 				 %>
-					<source src="<% print(src.src + '?i=' + timestamp) %>" type="<%= src.mime %>">
+					<source src="<% print(src.src) %>" type="<%= src.mime %>">
 				<% } %>
 			</video>
 		</div>
