@@ -11,9 +11,8 @@
 			<video id="sampleMovie" width="640" poster="<%= video.screenshot %>?script=euscreen640t" height="360" autoplay="autoplay" preload="preload" controls>
 				<% for(var i = 0; i < video.sources.length; i++){
 					var src = video.sources[i];
-					var timestamp = new Date().getTime();
 				 %>
-					<source src="<% print(src.src + '?i=' + timestamp) %>" type="<%= src.mime %>">
+					<source src="<%= src.src %>" type="<%= src.mime %>">
 				<% } %>
 			</video>
 		</div>
