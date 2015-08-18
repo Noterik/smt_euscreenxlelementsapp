@@ -4,18 +4,22 @@ var Linkinterceptor = function(options){
 }
 Linkinterceptor.prototype = Object.create(Component.prototype);
 Linkinterceptor.prototype.interceptLinks = function(){
-	jQuery('.no-prod').on('click', function(event){
+	jQuery('a[data-warning-experimental="true"]').on('click', function(event){
 		event.preventDefault();
-		var message = jQuery(this).data('message');
-		if(!message){
-			alert("Functionality is not available yet");
-		}else{
-			alert(message);
+		if(!eddie.getComponent('config') || !eddie.getComponent('config').getSetting('allow-experimental') || eddie.getComponent('config').getSetting('allow-experimental') !== "true"){
+			var message = jQuery(this).data('message');
+			if(!message){
+				alert("Functionality is not available yet");
+			}else{
+				alert(message);
+			}
 		}
-	});
+	})
 	
-	jQuery('a[data-prod="false"]').on('click', function(event){
-		event.preventDefault();
-		location.href = "404.html";
+	jQuery('a[data-404-experimental="true"]').on('click', function(event){
+		if(!eddie.getComponent('config') || !eddie.getComponent('config').getSetting('allow-experimental') || eddie.getComponent('config').getSetting('allow-experimental') !== "true"){
+			event.preventDefault();
+			location.href = "404.html";
+		}
 	});
 };

@@ -4,3 +4,5 @@ build/
 #ignore war directories
 dist/
 /bin
+
+WebContent/WEB-INF/lib/smt_euscreenxlelementsapp.jar
