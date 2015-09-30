@@ -34,6 +34,10 @@ var Urltransformer = function(){
 			var urlParams = {};
 			for(paramKey in params){
 				var param = params[paramKey];
+				//if there is no param
+				if(!param) {
+					continue;
+				}
 				var paramName = param.nodeName;
 				console.log("PARAMNAME: " , paramName);
 				if(paramName && paramName.indexOf("data-params-") > -1){
