@@ -24,13 +24,13 @@ var Urltransformer = function(){
 	}
 	
 	this.run = function(){
+		console.log("LETS TRANFORM THE URLS!");
 		jQuery('[data-url]').each(function(){
 			var $this = $(this);
 			var urlTo = $this.attr("data-url");
 			var actualUrl = config.getSetting("location-" + urlTo);
 			
 			var params = this.attributes;
-			console.log(params);
 			var urlParams = {};
 			for(paramKey in params){
 				var param = params[paramKey];
@@ -39,7 +39,6 @@ var Urltransformer = function(){
 					continue;
 				}
 				var paramName = param.nodeName;
-				console.log("PARAMNAME: " , paramName);
 				if(paramName && paramName.indexOf("data-params-") > -1){
 					var urlName = paramName.replace("data-params-" , "");
 					urlParams[urlName] = param.nodeValue;
