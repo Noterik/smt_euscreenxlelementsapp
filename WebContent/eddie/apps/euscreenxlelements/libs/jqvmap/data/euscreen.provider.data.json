@@ -13,11 +13,11 @@
             },
             "SASE" : {
             	"name" : "Screen Archive South East",
-                "videos" : 957,
+                "videos" : 996,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
-                "series": 4
+                "series": 6
             }
         }
     },
@@ -25,9 +25,9 @@
         "id" : "gr",
         "country" : "Greece",
         "providers" : {
-            "ERT" : {
+            "ERT SA" : {
             	"name" : "Ellinik&iacute; Radiofon&iacute;a Tile&oacute;rasi",
-                "videos" : 92,
+                "videos" : 288,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
@@ -49,11 +49,11 @@
         "providers" : {
             "CT" : {
             	"name" : "&#268;eská Televize",
-                "videos" : 1614,
+                "videos" : 1613,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
-                "series": 9
+                "series": 11
             }
         }
     },
@@ -127,7 +127,7 @@
         "providers" : {
             "ORF" : {
             	"name" : "&Ouml;sterreichischer Rundfunk",
-                "videos" : 2021,
+                "videos" : 2056,
                 "images" : 92,
                 "texts" : 0,
                 "audios" : 0,
@@ -141,7 +141,7 @@
         "providers" : {
             "TVC" : {
             	"name" : "Televisi&oacute; de Catalunya",
-                "videos" : 2758,
+                "videos" : 2821,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
@@ -155,7 +155,7 @@
         "providers" : {
             "TVR" : {
             	"name" : "Televiziunea Rom&acirc;n&#259;",
-                "videos" : 7047,
+                "videos" : 7136,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
@@ -197,7 +197,7 @@
         "providers" : {
             "NAVA" : {
             	"name" : "Nemzeti Audiovizu&aacute;lis Archivum",
-                "videos" : 590,
+                "videos" : 699,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
@@ -211,7 +211,7 @@
         "providers" : {
             "DR" : {
             	"name" : "Danmarks Radio",
-                "videos" : 3584,
+                "videos" : 3837,
                 "images" : 0,
                 "texts" : 0,
                 "audios" : 0,
@@ -239,7 +239,7 @@
         "providers" : {
             "RTBF" : {
             	"name" : "Radio-T&eacute;l&eacute;vision Belge de la Communaut&eacute; Fran&ccedil;aise",
-                "videos" : 2253,
+                "videos" : 2398,
                 "images" : 1,
                 "texts" : 0,
                 "audios" : 0,
