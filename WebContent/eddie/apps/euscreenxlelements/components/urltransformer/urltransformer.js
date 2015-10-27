@@ -26,9 +26,12 @@ var Urltransformer = function(){
 	this.run = function(){
 		console.log("LETS TRANFORM THE URLS!");
 		jQuery('[data-url]').each(function(){
+			console.log("THIS: ", this);
 			var $this = $(this);
 			var urlTo = $this.attr("data-url");
+			console.log("2");
 			var actualUrl = config.getSetting("location-" + urlTo);
+			console.log("3");
 			
 			var params = this.attributes;
 			var urlParams = {};
@@ -51,7 +54,9 @@ var Urltransformer = function(){
 				}else if(Object.keys(urlParams).length > 0){
 					actualUrl += "?" + $.param(urlParams);
 				}
+				console.log("ACTUAL URL: " + actualUrl);
 				if(actualUrl){
+					console.log("HI12341323");
 					$this.attr("href", actualUrl);
 				}
 			}
