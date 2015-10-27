@@ -251,6 +251,7 @@ body .page header .navbar .navbar-header .navbar-form .form-group .glyphicon-sea
   margin: 16px 20px 0 0;
   display: none;
   float: left;
+  cursor: pointer;
 }
 body .page header .navbar .navbar-header .navbar-form button {
   display: none;

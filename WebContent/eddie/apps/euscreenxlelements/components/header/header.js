@@ -8,6 +8,7 @@ var Header = function(options){
     this.$navbarElement = this.element.find('.navbar-header');
     this.$formElement = this.element.find('#headerform');
 	this.searchButton = this.element.find('#searchbutton');
+	this.searchIcon = this.element.find(".glyphicon-search");
 	this.searchForm = this.element.find('form');
 	this.menuButton = jQuery("#menubutton");
 	
@@ -15,6 +16,20 @@ var Header = function(options){
 		this.searchButton.remove();
 		this.searchForm.hide();
 	}
+	
+	this.searchIcon.on('click', function(){
+		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
+			console.log(eddie.getComponent("urltransformer"));
+			var url = eddie.getComponent("urltransformer").getURL("search", {"query": encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()))});
+			window.location = url;
+			//window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
+		}else{
+			console.log(eddie.getComponent("urltransformer"));
+			var url = eddie.getComponent("urltransformer").getURL("search", {"query": "*"});
+			window.location = url;
+			//window.location = "/search.html";
+		}
+	});
 	
 	this.searchForm.find('input').on('blur', function(event){
 		var searchKey = self.searchForm.find('input').val();
