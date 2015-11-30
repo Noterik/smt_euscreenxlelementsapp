@@ -2411,8 +2411,8 @@ body .box-link:hover {
 #coockie_notification {
 	width: 100%;
 	height: 10%;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.77);
+    color: #FFF;
+    background-color: #00acf6;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -2420,9 +2420,37 @@ body .box-link:hover {
 }
 
 #cookie_okay_button {
-	position: absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    border: none;
+   	margin: 18px;
+    padding: 5px 45px;
+	float: right;
+   	font-size: 14px;
+    margin-right: 70px;
+    height: 28px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#cookie_okay_button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #00acf6;
+}
+
+.coockie_notification-p {
+    padding: 20px 0px 30px 0px;
+    width: 70%;
+    float: left;
+    font-size: 14px;
+    margin-left: 88px;
+    text-align: left;
+}
+
+.coockie_notification-a {
+   	color: #FFF;
+    text-decoration: underline;
+}
+
+.coockie_notification-a:hover {
+   	color: #FFF;
+    text-decoration: none;
 }
