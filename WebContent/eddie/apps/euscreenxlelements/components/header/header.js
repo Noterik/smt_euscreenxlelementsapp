@@ -19,14 +19,16 @@ var Header = function(options){
 	
 	this.searchIcon.on('click', function(){
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
-			var url = eddie.getComponent("urltransformer").getURL("search", {"query": encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()))});
+			
+			var url = eddie.getComponent("urltransformer").getURL("search", {"query": ASCII8Decoding.encode(searchKey.toLowerCase())});
+			console.log("URL: " + url);
 			window.location = url;
-			//window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
+			window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
 		}else{
 			console.log(eddie.getComponent("urltransformer"));
 			var url = eddie.getComponent("urltransformer").getURL("search", {"query": "*"});
 			window.location = url;
-			//window.location = "/search.html";
+			window.location = "/search.html";
 		}
 	});
 	
@@ -35,7 +37,8 @@ var Header = function(options){
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
 			event.preventDefault();
 			console.log(eddie.getComponent("urltransformer"));
-			var url = eddie.getComponent("urltransformer").getURL("search", {"query": encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()))});
+			var url = eddie.getComponent("urltransformer").getURL("search", {"query": ASCII8Decoding.encode(searchKey.toLowerCase())});
+			console.log("URL: " + url);
 			window.location = url;
 		}
 	});
@@ -44,15 +47,12 @@ var Header = function(options){
 		event.preventDefault();
 		var searchKey = jQuery(this).find('input').val();
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
-			console.log(eddie.getComponent("urltransformer"));
-			var url = eddie.getComponent("urltransformer").getURL("search", {"query": encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()))});
+			var url = eddie.getComponent("urltransformer").getURL("search", {"query": ASCII8Decoding.encode(searchKey.toLowerCase())});
 			window.location = url;
-			//window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
 		}else{
 			console.log(eddie.getComponent("urltransformer"));
 			var url = eddie.getComponent("urltransformer").getURL("search");
 			window.location = url;
-			//window.location = "/search.html";
 		}
 	});
 	    
