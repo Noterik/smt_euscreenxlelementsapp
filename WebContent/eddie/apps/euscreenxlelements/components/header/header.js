@@ -19,7 +19,6 @@ var Header = function(options){
 	
 	this.searchIcon.on('click', function(){
 		if(!(searchKey == null || searchKey == "" || searchKey == " ")){
-			console.log(eddie.getComponent("urltransformer"));
 			var url = eddie.getComponent("urltransformer").getURL("search", {"query": encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()))});
 			window.location = url;
 			//window.location = "/search.html?query=" + encodeURIComponent(ASCII8Decoding.encode(searchKey.toLowerCase()));
