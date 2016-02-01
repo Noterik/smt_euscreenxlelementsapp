@@ -53,7 +53,7 @@ body.action {
   background: #fff;
 }
 body .modal {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 body .page header .navbar {
   background: #ffffff;
@@ -1138,6 +1138,7 @@ body i.icono-remove,
 body span.icono-remove,
 body div.icono-remove {
   background-position: -72px -106px;
+  margin: 10px 10px;
   width: 24px;
   height: 24px;
 }
@@ -2418,6 +2419,7 @@ body .box-link:hover {
     bottom: 0;
     z-index: 15;
     font-size: 16px;
+    z-index: 9999;
 }
 
 #cookie_okay_button {
@@ -2444,6 +2446,7 @@ body .box-link:hover {
     font-size: 14px;
     margin-left: 88px;
     text-align: left;
+    z-index: 9999;
 }
 
 .coockie_notification-a {
