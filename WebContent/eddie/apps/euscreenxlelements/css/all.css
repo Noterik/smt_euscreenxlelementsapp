@@ -1707,23 +1707,27 @@ body .box-link:hover {
   }
   body .terms .main .static-page,
   body .privacy .main .static-page,
-  body .contact .main .static-page {
+  body .contact .main .static-page,
+  body .help .main .static-page {
     border-left: 0px;
     border-right: 0px;
   }
   body .terms .main .static-page .content,
   body .privacy .main .static-page .content,
-  body .contact .main .static-page .content {
+  body .contact .main .static-page .content,
+  body .help .main .static-page .content {
     width: 520px;
   }
   body .terms .main .static-page .content .pads,
   body .privacy .main .static-page .content .pads,
-  body .contact .main .static-page .content .pads {
+  body .contact .main .static-page .content .pads,
+  body .help .main .static-page .content .pads {
     padding: 50px;
   }
   body .terms .main .static-page .content .pads h1,
   body .privacy .main .static-page .content .pads h1,
-  body .contact .main .static-page .content .pads h1 {
+  body .contact .main .static-page .content .pads h1,
+  body .help .main .static-page .content .pads h1 {
     font-size: 2em;
     margin-top: 0px;
   }
@@ -2080,22 +2084,26 @@ body .box-link:hover {
   }
   body .terms .main .static-page .sidebar,
   body .privacy .main .static-page .sidebar,
-  body .contact .main .static-page .sidebar {
+  body .contact .main .static-page .sidebar,
+  body .help .main .static-page .sidebar {
     width: 250px;
   }
   body .terms .main .static-page .sidebar ul,
   body .privacy .main .static-page .sidebar ul,
-  body .contact .main .static-page .sidebar ul {
+  body .contact .main .static-page .sidebar ul,
+  body .help .main .static-page .sidebar ul {
     width: 250px;
   }
   body .terms .main .static-page .sidebar ul li a,
   body .privacy .main .static-page .sidebar ul li a,
-  body .contact .main .static-page .sidebar ul li a {
+  body .contact .main .static-page .sidebar ul li a,
+  body .help .main .static-page .sidebar ul li a {
     font-size: 1.087em;
   }
   body .terms .main .static-page .content,
   body .privacy .main .static-page .content,
-  body .contact .main .static-page .content {
+  body .contact .main .static-page .content,
+  body .help .main .static-page .content {
     width: 690px;
   }
   body .search header .navbar .container .navbar-header .navbar-form {
@@ -2396,7 +2404,8 @@ body .box-link:hover {
   }
   body .terms .main .static-page .content,
   body .privacy .main .static-page .content,
-  body .contact .main .static-page .content {
+  body .contact .main .static-page .content,
+  body .help .main .static-page .content {
     width: 890px;
   }
   body .content-map .main .content .info-wrap {
