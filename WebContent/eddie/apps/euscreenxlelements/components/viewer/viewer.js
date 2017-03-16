@@ -70,7 +70,17 @@ Viewer.prototype.setAudio = function(data){
 	var template = _.template(this.element.find('.audio-template').text());
 	var audio = JSON.parse(data);
 	
-	this.element.html(template({audio: audio}));
+	var html = template({audio: audio});
+	
+	if(this.element.find('audio')[0]){
+		delete(this.element.find('audio')[0]);
+		this.element.find('audio').remove();
+	}
+	
+	this.element.find('.audio-player-minimal').remove();
+	this.element.append(html);
+	
+	//this.element.html(template({audio: audio}));
 };
 Viewer.prototype.setPicture = function(data){
 	var template = _.template(this.element.find('.picture-template').text());
