@@ -19,24 +19,43 @@ Viewer.prototype.setUri = function(uri){
 	
 	this.initializeViewer();
 };
+
 Viewer.prototype.setVideo = function(data){
-	console.log("Viewer.prototype.setVideo(" + data + ")");
+	//console.log("Viewer.prototype.setVideo(" + data + ")");
+
 	var template = _.template(this.element.find('.video-template').text());
 	var self = this;
 	var video = JSON.parse(data);
 	
-	console.log("VIDEO");
+	console.log("VIDEO DANIEL");
 	console.log(video);
-	console.log("END VIDEO");
+	console.log("END VIDEO2 "+video.sources[0].src+" "+video.screenshot+" duration="+video.sources[0].duration);
 	
-	var html = template({video: video});
+	var videoid=video.sources[0].src;
+	var ticket="";
+	var pos=videoid.indexOf("?");
+	if (pos!=-1) {
+		ticket = videoid.substring(pos+1);
+		videoid=videoid.substring(0,pos);
+	}
+	var duration=video.sources[0].duration;
+	var maggieid=video.sources[0].maggieid;
+	console.log("TICKET="+ticket);
+	console.log("SRC="+videoid);
 	
-	if(this.element.find('video')[0]){
+	//var html = template({video: video});
+	//var manurl = "http://euscreen.video-editor.eu/euscreenxlmanifestservlet/?videoid="+videoid+"&"+ticket+"&duration="+duration;
+	var manurl = "https://beta.qandr.eu/euscreenxlmanifestservlet/?videoid="+videoid+"&"+ticket+"&duration="+duration+"&maggieid="+maggieid;
+	console.log("MANURL2="+manurl);
+	//var manurl = "https://videoeditor.noterik.com/manifest/createmanifest.php?src=http://openbeelden.nl/files/09/9983.9970.WEEKNUMMER403-HRE0001578C.mp4&duration=86360&id=http://openbeelden.nl/files/09/9983.9970.WEEKNUMMER403-HRE0001578C.mp4";
+	var html = "<script>new europeanamediaplayer.default(document.getElementById(\"viewer\"), {}, {editor: \"http://video-editor.eu\", manifest: \""+manurl+"\"});</script>";
+if(this.element.find('video')[0]){
 		delete(this.element.find('video')[0]);
 		this.element.find('video').remove();
 	}
 	this.element.find('.media-player').remove();
 	this.element.append(html);
+	console.log('html='+html);
 	/*
 	self.loading(true);
 	
@@ -59,6 +78,8 @@ Viewer.prototype.setVideo = function(data){
 	*/
 	
 };
+
+
 Viewer.prototype.setDevice = function(data){
 	console.log("Viewer.setDevice(" + data + ")");
 	data = JSON.parse(data);
