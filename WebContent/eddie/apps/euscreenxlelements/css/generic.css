@@ -14,6 +14,14 @@
 	display: block;
 }
 
+div.eups-player {
+    height: 400px !important;
+}
+
+div.eups-player .btn {
+	width: 48px;
+}
+
 .media-player .loading{
 	display: none;
 	position: absolute;
