@@ -51,7 +51,7 @@ var Header = function(options){
 			window.location = url;
 		}else{
 			console.log(eddie.getComponent("urltransformer"));
-			var url = eddie.getComponent("urltransformer").getURL("search");
+			var url = eddie.getComponent("urltransformer").getURL("search", {"query": "*"});
 			window.location = url;
 		}
 	});
