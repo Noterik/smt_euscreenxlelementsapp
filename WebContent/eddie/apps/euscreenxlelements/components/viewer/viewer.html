@@ -20,27 +20,12 @@
 </script>
 
 <script type="text/template" class="audio-template">
-	<% if (audio.provider == "eu_kb") { %>
-	
-	<div class="media-player col-md-12 aspect-ratio normal">
-		<div class="loading"></div> 
-		<div class="player" id="media-player">
-			<video id="sampleMovie" width="640" poster="https://images3.noterik.com/domain/euscreenxl/user/eu_kb/euscreen-kb-takedown.png" height="360" controls controlsList="nodownload">
-				<source src="<%= audio.src %>" type="<%= audio.mime %>">
-			</video>
-		</div>
-	</div>
-
-	<% } else { %>
-
 	<div class="loading"></div>
 	<div class="col-md-12 audio-player-minimal">
 		<audio controls="controls">
 			<source type="<%= audio.mime %>" src="<%= audio.src %>"></source>
 		</audio>
 	</div>
-
-	<% } %>
 </script>
 
 <script type="text/template" class="picture-template">
