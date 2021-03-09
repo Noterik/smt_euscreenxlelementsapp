@@ -29,9 +29,7 @@ var Urltransformer = function(){
 			console.log("THIS: ", this);
 			var $this = $(this);
 			var urlTo = $this.attr("data-url");
-			console.log("2");
 			var actualUrl = config.getSetting("location-" + urlTo);
-			console.log("3");
 			
 			var params = this.attributes;
 			var urlParams = {};
@@ -56,7 +54,6 @@ var Urltransformer = function(){
 				}
 				console.log("ACTUAL URL: " + actualUrl);
 				if(actualUrl){
-					console.log("HI12341323");
 					$this.attr("href", actualUrl);
 				}
 			}
