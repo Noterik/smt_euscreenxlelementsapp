@@ -2187,6 +2187,15 @@ body .box-link:hover {
   body .content-map .main .content .maps {
     width: 732.5px;
   }
+  body .about .main .content .info-wrap {
+    width: 242.5px;
+  }
+  body .about .main .content .info-wrap .info {
+    width: 242.5px;
+  }
+  body .content-map .main .content .maps {
+    width: 520px;
+  }
   body .series .main .row .right {
     border-left: 6px solid #f2f2f2;
   }
@@ -2416,6 +2425,15 @@ body .box-link:hover {
   }
   body .content-map .main .content .maps {
     width: 882.5px;
+  }
+  body .about .main .content .info-wrap {
+    width: 292.5px;
+  }
+  body .about .main .content .info-wrap .info {
+    width: 292.5px;
+  }
+  body .about .main .content .maps {
+    width: 620px;
   }
 }
 #coockie_notification {
