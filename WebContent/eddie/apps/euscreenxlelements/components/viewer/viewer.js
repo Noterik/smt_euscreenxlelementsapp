@@ -38,7 +38,7 @@ Viewer.prototype.setVideo = function(data) {
 	var duration = video.sources[0].duration;
 	var maggieid = video.sources[0].maggieid;
 
-	var manurl = "https://embd.eu/euscreenxlmanifestservlet/?videoid="
+	var manurl = "https://beta.euscreenxl.eu/euscreenxlmanifestservlet/?videoid="
 			+ videoid + "&" + ticket + "&duration=" + duration + "&maggieid="
 			+ maggieid;
 

@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic);
+@import url('https://fonts.cdnfonts.com/css/d-din');
 /**
 * all.less
 *
@@ -19,7 +20,7 @@ a:focus {
   text-decoration: none;
 }
 input {
-  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  font-family: 'D-DIN', Helvetica, Arial, sans-serif;
 }
 .colorblack {
   color: #000000;
@@ -65,7 +66,7 @@ body .page header .navbar > .container {
 }
 body .page header .navbar .navbar-collapse ul li a {
   font-size: 1.071em;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #808080;
   padding: 25px 30px 0px 30px;
   border-right: 1px solid #f2f2f2;
@@ -130,11 +131,11 @@ body .page header .navbar .user-thumbnail .status-icon {
   background: #8be415;
 }
 body .page header .navbar .user-thumbnail .dropdown-menu li a {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   padding: 5px 10px 5px 15px;
 }
 body .page header .navbar .navbar-header {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   height: 70px;
   text-align: center;
   margin-left: -15px;
@@ -262,10 +263,6 @@ body .page header .navbar .navbar-header.searchOpened .navbar-form {
 body .page header .navbar .navbar-header.searchOpened a.navbar-brand {
   display: none;
 }
-body .page .main {
-  padding-top: 70px;
-  padding-bottom: 6px;
-}
 body .page .main.no-top-padding {
   padding-top: 0px;
 }
@@ -282,7 +279,7 @@ body .page .main .ads .wrap {
 body .page .main .ads .wrap .text {
   background: rgba(0, 174, 239, 0.6);
   display: block;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   font-size: 1.214em;
   color: #ffffff;
   width: 92%;
@@ -313,7 +310,8 @@ body .page .main .media-item .media-metadata a h3.media-heading {
   color: #333333;
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
-  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  font-family: 'D-DIN', Helvetica, Arial, sans-serif;
+  padding-top: 9px;
 }
 body .page .main .media-item .media-metadata .line {
   display: block;
@@ -323,17 +321,17 @@ body .page .main .media-item .media-metadata .line a h3 {
   font-size: 1.2em;
 }
 body .page .main .media-item .media-metadata .line .label {
-  color: #808080;
+  color: #7F7F7F;
   font-weight: normal;
   padding-left: 0px;
-  font-size: 0.8em;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: table;
 }
 body .page .main .media-item .media-metadata .line .value {
   font-size: 0.929em;
-  color: #808080;
+  color: #333333;
 }
 body .page .main .media-item .media-wrapper {
   position: relative;
@@ -345,14 +343,14 @@ body .page .main .media-item .media-wrapper .media-length {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #ffffff;
   color: #ffffff;
   padding: 1px 6px 1px 6px;
   line-height: 1.48em;
   font-size: 0.857em;
   background: rgba(0, 0, 0, 0.1);
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   z-index: 7;
 }
 body .page .main .media-item .media-wrapper .media-playing {
@@ -402,7 +400,7 @@ body .page .main .media-item .media-wrapper .media-title span i {
 body .page .main .media-item .media-wrapper .media-title h3 {
   color: #ffffff;
   font-size: 1em;
-  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+  font-family: 'D-DIN', Helvetica, Arial, sans-serif;
   margin: 15px 0 0 0;
   width: 100%;
 }
@@ -504,22 +502,46 @@ body .page .main .media-action:after {
 body .page .main .media-action:after {
   clear: both;
 }
+body .item .main .row .left .row .media-action > div {
+	float: right;
+	font-size: 16px;
+	color: #0E0E0E;
+	height: 36px;
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+}
 body .page .main .media-action .overlaycontent {
   font-size: 1.143em;
   width: 300px;
   right: 0px;
-  z-index: 2;
+  z-index: 3;
   background: rgba(255, 255, 255, 0.95);
-  border-top: 5px solid #00aeef;
   padding: 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
   display: none;
   position: absolute;
+  margin-right: 2px;
+  border-radius: 6px;
+  margin-top: 6px;
 }
 body .page .main .media-action .overlaycontent:before,
 body .page .main .media-action .overlaycontent:after {
   content: " ";
   display: table;
+  position: absolute;
+  top: -12px;
+  right: 6px;
+  overflow: hidden;
+  border: solid 12px transparent;
+  border-top: 0;
+  border-bottom-color: #fff;
+  z-index: 2;
+}
+body .page .main .media-action .overlaycontent:before {
+	top:-13px;
+    z-index:1;
+    border-bottom-color:rgba(0,0,0,0.035);
 }
 body .page .main .media-action .overlaycontent:after {
   clear: both;
@@ -528,13 +550,14 @@ body .page .main .media-action .overlaycontent.big {
   width: 300px;
 }
 body .page .main .media-action .overlaycontent h3 {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
-  color: #00aeef;
-  font-size: 1.286em;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  color: #000;
+  font-size: 16px;
   margin: 0 0 15px 0;
 }
 body .page .main .media-action .overlaycontent ul li {
   padding: 0px;
+  margin-right: 32px;
 }
 body .page .main .media-action .overlaycontent ul li .fa-lg {
   font-size: 1.4em;
@@ -612,7 +635,7 @@ body .page .main .media-action .overlaycontent .contact-provider-form .btn-euscr
 }
 body .page .main .media-action .overlaycontent .contact-provider-form .form-notification {
   color: #8cc63f;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   font-size: 1.2em;
   margin-top: 20px;
   display: none;
@@ -634,6 +657,7 @@ body .page .main .media-action .overlaycontent .btn-euscreen:active {
 }
 body .page .main .media-action .overlaycontent .permalink {
   margin: 15px 0 0 0;
+  display: block;
 }
 body .page .main .media-action .overlaycontent .permalink .input-group-addon {
   border-color: #00aeef;
@@ -647,15 +671,18 @@ body .page .main .media-action .overlaycontent .permalink .input-group-addon {
   background: #00aeef;
 }
 body .page .main .media-action .overlaycontent .permalink .form-control {
-  border-color: #00aeef;
+  border-color: #f14cae;
   -webkit-border-top-right-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  color: #555555;
+  color: #000;
   margin-bottom: 0px;
+  border-radius: 6px;
+  padding-right: 44px;
+  font-size: 12px;
 }
 body .page .main .media-action .overlaycontent .permalink .form-control[readonly] {
   background: #fff;
@@ -707,8 +734,6 @@ body .page .main .media-action .button-list {
   z-index: 5;
 }
 body .page .main .media-action .button-list > li {
-  border-left: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
   margin-left: -4px;
   padding: 0px;
   position: relative;
@@ -717,36 +742,24 @@ body .page .main .media-action .button-list > li .tooltip {
   z-index: 1031 !important;
 }
 body .page .main .media-action .button-list > li button {
-  padding-top: 10px;
-  height: 60px;
-  width: 60px;
+  padding-top: 6.5px;
+  height: 36px;
+  width: 40px;
   display: block;
+  background-color: #f2f2f2;
   border: 0px;
   border-radius: 0px;
   box-shadow: none;
-  background: #ffffff;
   -webkit-transition: background 0.35s;
   transition: background 0.35s;
 }
-body .page .main .media-action .button-list > li button:hover,
-body .page .main .media-action .button-list > li button:active,
-body .page .main .media-action .button-list > li button.active {
-  background: #00aeef;
+body .page .main .media-action .button-list > li.copyright button {
+	border-bottom-right-radius: 20px!important;
+    border-bottom-left-radius: 20px!important;
 }
-body .page .main .media-action .button-list > li button:hover i.icono-copyright,
-body .page .main .media-action .button-list > li button:active i.icono-copyright,
-body .page .main .media-action .button-list > li button.active i.icono-copyright {
-  background-position: -253px -43px;
-}
-body .page .main .media-action .button-list > li button:hover i.icono-share,
-body .page .main .media-action .button-list > li button:active i.icono-share,
-body .page .main .media-action .button-list > li button.active i.icono-share {
-  background-position: -277px -43px;
-}
-body .page .main .media-action .button-list > li button:hover i.icono-bookmark,
-body .page .main .media-action .button-list > li button:active i.icono-bookmark,
-body .page .main .media-action .button-list > li button.active i.icono-bookmark {
-  background-position: -298px -43px;
+body .page .main .media-action .button-list > li.bookmark button {
+	border-top-left-radius: 20px!important;
+    border-top-right-radius: 20px!important;
 }
 body .page .main .media-action .button-list > li button:hover i.icono-info,
 body .page .main .media-action .button-list > li button:active i.icono-info,
@@ -802,7 +815,7 @@ body .page .main .jumbotron-small .hue .pads h1 {
 }
 body .page .main .jumbotron-small .hue .pads p {
   width: auto;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   padding: 10px 15px 13px 15px;
   display: none;
   font-size: 0.857em;
@@ -1096,22 +1109,22 @@ body i.icono-copyright,
 body span.icono-copyright,
 body div.icono-copyright {
   background-position: -253px -16px;
-  width: 24px;
-  height: 27px;
+  width: 22px;
+  height: 23px;
 }
 body i.icono-bookmark,
 body span.icono-bookmark,
 body div.icono-bookmark {
-  background-position: -298px -16px;
-  width: 23px;
-  height: 27px;
+  background-position: -297px -16px;
+  width: 24px;
+  height: 23px;
 }
 body i.icono-share,
 body span.icono-share,
 body div.icono-share {
-  background-position: -277px -16px;
-  width: 21px;
-  height: 27px;
+  background-position: -275px -16px;
+  width: 22px;
+  height: 23px;
 }
 body i.icono-info,
 body span.icono-info,
@@ -1191,8 +1204,22 @@ body div.icono-add {
   width: 24px;
   height: 24px;
 }
+body i.icono-facebook,
+body span.icono-facebook,
+body div.icono-facebook {
+  background-position: -166px -81px;
+  width: 43px;
+  height: 44px;
+}
+body i.icono-twitter,
+body span.icono-twitter,
+body div.icono-twitter {
+  background-position: -209px -81px;
+  width: 44px;
+  height: 36px;
+}
 body .more {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding: 23px 0 23px 0;
@@ -1214,7 +1241,7 @@ body .nav-header {
 body .nav-header li {
   background: #00aeef;
   color: #fff;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   height: 60px;
   padding: 20px 20px 0 20px;
   font-size: 1.071em;
@@ -1238,7 +1265,7 @@ body .select-wrap select {
   font-size: 1em;
   border: 0px;
   border-radius: 0px;
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1497,7 +1524,7 @@ body .modal .modal-dialog .modal-content .modal-header {
   padding: 50px 0 15px 0;
 }
 body .modal .modal-dialog .modal-content .modal-header h4 {
-  font-family: 'Titillium Web', 'DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
+  font-family: 'D-DIN', "Helvetica Neue", Monaco, "Andale Mono", Consolas, monospace;
   color: #ffffff;
 }
 body .modal .modal-dialog .modal-content .modal-header .item-anchor {
@@ -1577,6 +1604,9 @@ body .box-link:hover {
   border-color: #00aeef;
   color: #00aeef;
 }
+body .item .main .row .right .row .section-content .media-relate-title {
+	  display: none;
+  }
 /**
 * responsive.less
 *
@@ -1588,9 +1618,6 @@ body .box-link:hover {
 /* Extra small devices (mobiles, 480px and up) */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body .page .main {
-    padding-top: 75px;
-  }
   body .page .main .left .row .searchbar {
     display: block;
     border-bottom: 0px;
@@ -1621,7 +1648,7 @@ body .box-link:hover {
   }
   body .page .main .left .row .filters {
     background: #ffffff;
-    margin: 1px 0 6px 0;
+    margin: 1px 0 0 0;
     width: 100%;
     position: inherit;
     top: auto;
@@ -1678,13 +1705,13 @@ body .box-link:hover {
   body .page .jumbotron-wide .wrap h1 {
     font-size: 2.5em;
   }
-  body .search .main .left {
-    border-top: 5px solid #f2f2f2;
-  }
   body .search .main .left.fix {
     position: fixed;
     overflow: auto;
     width: 250px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
+    margin-right: 20px;
   }
   body .search .main .left.fix-bottom {
     position: absolute !important;
@@ -1694,7 +1721,8 @@ body .box-link:hover {
     margin-left: 250px;
   }
   body .search .main .right .row.results-action {
-    padding-top: 70px;
+    margin-top: 125px;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.15);
   }
   body .search .main .right .row.results-action .counter {
     margin: 6px 0 0 0;
@@ -1744,21 +1772,38 @@ body .box-link:hover {
     border-left: 0px;
     border-right: 0px;
   }
+  body .item .main .row .left .row .media-action > div {
+  	margin-right: 28px;
+  }
   body .item .main .row .left .row .media-action .button-list {
     position: inherit;
     top: auto;
     right: auto;
-    height: 60px;
+    height: 36px;
   }
   body .item .main .row .left .row .media-action .button-list > li {
     display: inline-block;
     border-bottom: 0px;
   }
+  body .page .main .media-action .button-list > li.copyright button {
+	border-top-right-radius: 20px!important;
+    border-bottom-right-radius: 20px!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+  }
+  body .page .main .media-action .button-list > li.bookmark button {
+	border-top-left-radius: 20px!important;
+    border-bottom-left-radius: 20px!important;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0	!important;
+  }
   body .item .main .row .left .row .media-action .copyright .big {
     width: 500px;
   }
   body .item .main .row .left .row .media-metadata {
-    margin: 1px 0 0 0;
+    margin: 20px 0 0 0;
+    background: #f2f2f2;
+    border-radius: 12px;
   }
   body .item .main .row .left .row .media-metadata h1 {
     width: 100%;
@@ -2057,11 +2102,9 @@ body .box-link:hover {
   body .search .main .right.fix {
     margin-left: 323.333px;
   }
-  body .search .main .right .row.results-media .mediatab .nav li a {
-    padding: 20px;
-  }
   body .item .main .row .left .row .media-action .overlaycontent {
     font-size: 1em;
+    width: 400px;
   }
   body .item .main .row .left .row .media-action .overlaycontent .extra {
     font-size: 0.929em;
@@ -2071,13 +2114,19 @@ body .box-link:hover {
   }
   body .item .main .row .right {
     margin-top: 0px;
-    border-left: 6px solid #f2f2f2;
   }
   body .item .main .row .right .row .sectiontab {
     display: none;
   }
   body .item .main .row .right .row .section-content {
     margin-top: 0px;
+  }
+  body .item .main .row .right .row .section-content .media-relate-title {
+	  font-size: 20px;
+	  color: #000000;
+	  font-weight: 500;
+	  padding: 5px 0 0 20px;
+	  display: block;
   }
   body .item .main .row .right .row .section-content .discover-more {
     font-size: 1em;
@@ -2196,9 +2245,6 @@ body .box-link:hover {
   body .content-map .main .content .maps {
     width: 520px;
   }
-  body .series .main .row .right {
-    border-left: 6px solid #f2f2f2;
-  }
   body .series .main .row .right .series-header {
     margin-top: 0px;
   }
@@ -2258,12 +2304,6 @@ body .box-link:hover {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 1025px) {
-  body {
-    margin-bottom: 183px;
-  }
-  body .page .main {
-    padding-bottom: 50px !important;
-  }
   body .page .jumbotron-wide {
     background-attachment: fixed;
   }
@@ -2335,7 +2375,7 @@ body .box-link:hover {
     margin-left: 323.3333px;
   }
   body .search .main .right .row.results-action .counter .pull-right .sort-option a {
-    padding-top: 18px;
+    padding-top: 5px;
   }
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-mute,
   body .audio-player .jp-audio .jp-type-single .jp-interface .jp-controls li .jp-unmute {
@@ -2387,7 +2427,7 @@ body .box-link:hover {
     font-size: 1.1em;
   }
   body .page .main .right .row.results-media .mediatab {
-    width: 774px;
+    width: 780px;
   }
   body .page .main .right .row .media-relate .media-item .media-metadata h3.media-heading {
     font-size: 1.143em;
@@ -2397,7 +2437,7 @@ body .box-link:hover {
     font-size: 0.929em;
   }
   body .search .main .left.fix {
-    width: 390px;
+    width: 370px;
   }
   body .search .main .right.fix {
     margin-left: 390px;
